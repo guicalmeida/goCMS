@@ -1,5 +1,5 @@
 {{define "sidebar"}}
-<div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900">
+<div class="fixed top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900">
   <div class="text-gray-100 text-xl">
     <div class="p-2.5 mt-1 flex items-center">
       <img class="object-contain h-8 w-8"
@@ -8,8 +8,8 @@
     </div>
     <div class="my-2 bg-gray-600 h-[1px]"></div>
   </div>
-  <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
+  <a class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white" href="/content-types">
     <span class="text-[15px] ml-4 text-gray-200 font-bold">Content types</span>
-  </div>
+  </a>
 </div>
 {{end}}
