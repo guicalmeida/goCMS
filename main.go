@@ -15,7 +15,13 @@ func main() {
 	router.LoadHTMLGlob("templates/*.tmpl")
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.tmpl", gin.H{
-			"title": "Main website",
+			"title": "Go CMS",
+		})
+	})
+
+	router.GET("/content-types", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "content-types.tmpl", gin.H{
+			"title": "Content Types",
 		})
 	})
 	router.Run(":9254")
